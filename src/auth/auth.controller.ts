@@ -5,12 +5,12 @@ import { GoogleGuard } from './guards/google.guard';
 @Controller('auth')
 export class AuthController {
   constructor(private readonly authService: AuthService) {}
-  @Get('oauth/google')
   @UseGuards(GoogleGuard)
+  @Get('oauth/google')
   async signinWithGoogle() {}
 
-  @Get('oauth/google/redirect')
   @UseGuards(GoogleGuard)
+  @Get('oauth/google/redirect')
   async googleOAuthredirect(@Req() req) {
     return this.authService.googleAuthRedirect(req.user);
   }
