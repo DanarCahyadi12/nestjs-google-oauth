@@ -9,3 +9,14 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+
+model User {
+  id String @id @default(uuid())
+  displayName String 
+  email String @unique
+  picture String? @db.MediumText
+  password String? @db.MediumText
+  refreshToken String? @db.MediumText
+
+}
