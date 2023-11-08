@@ -12,7 +12,7 @@ Sign In with google in nest JS. This authentication using passport and JWT (Json
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`GOOGLE_CLIENT_ID : <YOUR_CLIENT_ID`
+`GOOGLE_CLIENT_ID : <YOUR_CLIENT_ID>`
 
 `GOOGLE_CLIENT_SECRET : <YOUR_CLIENT_SECRET>`
 
@@ -29,8 +29,6 @@ To run this project, you will need to add the following environment variables to
 
 
 ## Installation
-
-Install my-project with npm
 
 ```bash
   git clone https://DanarCahyadi12/github.com/nestjs-google-oauth
