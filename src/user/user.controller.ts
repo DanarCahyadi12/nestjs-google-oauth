@@ -6,7 +6,6 @@ export class UserController {
   constructor(private readonly userService: UserService) {}
   @Get()
   getUser(@Req() req) {
-    console.log(req.user);
     return req.user;
   }
 }
